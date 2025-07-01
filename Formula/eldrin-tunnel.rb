@@ -1,24 +1,24 @@
 class EldrinTunnel < Formula
   desc "Secure WebSocket tunneling for exposing local services to the internet"
   homepage "https://tunnel.eldrin.io"
-  version "0.0.7"
+  version "0.0.8"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/eldrin-project/eldrin-tunnel-client/releases/download/v0.0.7/eldrin-tunnel-client-x86_64-apple-darwin.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      url "https://github.com/eldrin-project/homebrew-eldrin-tunnel/releases/download/v0.0.8/eldrin-tunnel-client-x86_64-apple-darwin.tar.gz"
+      sha256 "0143e469c452decb1dfec92843f36a386d47844b8bbf3b9bc8846fc8666a4b10"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/eldrin-project/eldrin-tunnel-client/releases/download/v0.0.7/eldrin-tunnel-client-aarch64-apple-darwin.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      url "https://github.com/eldrin-project/homebrew-eldrin-tunnel/releases/download/v0.0.8/eldrin-tunnel-client-aarch64-apple-darwin.tar.gz"
+      sha256 "583f864ebdaeac4a43295b13382071c437f11401682f80631b265254d04765fe"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/eldrin-project/eldrin-tunnel-client/releases/download/v0.0.7/eldrin-tunnel-client-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "0019dfc4b32d63c1392aa264aed2253c1e0c2fb09216f8e2cc269bbfb8bb49b5"
+      url "https://github.com/eldrin-project/homebrew-eldrin-tunnel/releases/download/v0.0.8/eldrin-tunnel-client-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "6e64969cdcfd5bfd9a739ed88c4aa411957209e03cfb81ca78ea59a1c01a1fbe"
     end
   end
 
