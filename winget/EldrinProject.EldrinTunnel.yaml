@@ -1,0 +1,76 @@
+# Created with YamlCreate.ps1 v2.4.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifests.version.1.6.0.schema.json
+
+PackageIdentifier: EldrinProject.EldrinTunnel
+PackageVersion: 0.0.4
+DefaultLocale: en-US
+ManifestType: version
+ManifestVersion: 1.6.0
+
+---
+# Created with YamlCreate.ps1 v2.4.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifests.defaultLocale.1.6.0.schema.json
+
+PackageIdentifier: EldrinProject.EldrinTunnel
+PackageVersion: 0.0.4
+PackageLocale: en-US
+Publisher: Eldrin Project
+PublisherUrl: https://eldrin.link
+PublisherSupportUrl: https://eldrin.link/support
+Author: Eldrin Project
+PackageName: Eldrin Tunnel
+PackageUrl: https://eldrin.link
+License: MIT
+LicenseUrl: https://github.com/eldrin-project/homebrew-eldrin-tunnel/blob/main/LICENSE
+Copyright: Copyright (c) 2024 Eldrin Project
+ShortDescription: SSH tunnel client for exposing local services to the internet
+Description: |-
+  Eldrin Tunnel is a secure SSH-based tunneling solution that allows you to expose
+  local development servers to the internet. Features include tunnel restoration,
+  cross-platform support, and both free and premium tiers.
+  
+  Key features:
+  - Secure SSH-based tunneling
+  - Automatic tunnel restoration after network changes
+  - Cross-platform support (Windows, macOS, Linux)
+  - Free anonymous tunnels with 1-hour expiration
+  - Premium persistent tunnels with custom subdomains
+Moniker: eldrin-tunnel
+Tags:
+- ssh
+- tunnel
+- ngrok
+- development
+- local-server
+- port-forwarding
+- cli
+ReleaseNotes: |-
+  See release notes at: https://github.com/eldrin-project/homebrew-eldrin-tunnel/releases/tag/v0.0.4
+ReleaseNotesUrl: https://github.com/eldrin-project/homebrew-eldrin-tunnel/releases/tag/v0.0.4
+PurchaseUrl: https://eldrin.link/pricing
+ManifestType: defaultLocale
+ManifestVersion: 1.6.0
+
+---
+# Created with YamlCreate.ps1 v2.4.1
+# yaml-language-server: $schema=https://aka.ms/winget-manifests.installer.1.6.0.schema.json
+
+PackageIdentifier: EldrinProject.EldrinTunnel
+PackageVersion: 0.0.4
+Platform:
+- Windows.Desktop
+MinimumOSVersion: 10.0.0.0
+InstallModes:
+- silent
+- silentWithProgress
+Installers:
+- Architecture: x64
+  InstallerType: zip
+  InstallerUrl: https://github.com/eldrin-project/homebrew-eldrin-tunnel/releases/download/v0.0.4/eldrin-tunnel-x86_64-pc-windows-msvc.zip
+  InstallerSha256: 8e1ed131cca15ac4ff48a9a5c01691bf24fd9945e80b0b83d1a61e6699c9996b
+  NestedInstallerType: portable
+  NestedInstallerFiles:
+  - RelativeFilePath: eldrin-tunnel.exe
+    PortableCommandAlias: eldrin-tunnel
+ManifestType: installer
+ManifestVersion: 1.6.0

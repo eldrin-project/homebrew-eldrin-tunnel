@@ -1,24 +1,24 @@
 class EldrinTunnel < Formula
   desc "SSH tunnel client for exposing local services to the internet"
-  homepage "https://tunnel.eldrin.link"
-  version "0.0.3"
+  homepage "https://eldrin.link"
+  version "0.0.4"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/eldrin-project/homebrew-eldrin-tunnel/releases/download/v0.0.3/eldrin-tunnel-x86_64-apple-darwin.tar.gz"
-      sha256 "25a6763ca03fcb22088145cae33b081b995adcd4e333cca37e5868f2bf279d5c"
+      url "https://github.com/eldrin-project/homebrew-eldrin-tunnel/releases/download/v0.0.4/eldrin-tunnel-x86_64-apple-darwin.tar.gz"
+      sha256 "f9f06389939d6227dce2a8d2d549af5b1a83b2afa046c2529254f784ced5d1d7"
     end
     if Hardware::CPU.arm?
-      url "https://github.com/eldrin-project/homebrew-eldrin-tunnel/releases/download/v0.0.3/eldrin-tunnel-aarch64-apple-darwin.tar.gz"
-      sha256 "e1f39f33710ff633cca5e7149d477b96662f1d23ddd4da91665d0647237816e3"
+      url "https://github.com/eldrin-project/homebrew-eldrin-tunnel/releases/download/v0.0.4/eldrin-tunnel-aarch64-apple-darwin.tar.gz"
+      sha256 "4048cc5127713d4c2d811fa2bd40436734f614cf85641688bc33c0d9ccada438"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/eldrin-project/homebrew-eldrin-tunnel/releases/download/v0.0.3/eldrin-tunnel-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "fb37d216ca6f6a316852a9bc09773430e50f0fe522f34cd4a4c0d26d1a276bf9"
+      url "https://github.com/eldrin-project/homebrew-eldrin-tunnel/releases/download/v0.0.4/eldrin-tunnel-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "656b140c9b946617c14d8498a9adc039b80722267015284a360e2fbbb44c5ce9"
     end
   end
 
@@ -53,7 +53,7 @@ class EldrinTunnel < Formula
       Static URL (registered users):
         eldrin-tunnel --port 3000 --url myapp
 
-      Visit https://tunnel.eldrin.link for documentation.
+      Visit https://eldrin.link for documentation.
       
       Install via: brew tap eldrin-project/eldrin-tunnel
     EOS

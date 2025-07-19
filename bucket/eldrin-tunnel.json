@@ -1,0 +1,23 @@
+{
+    "version": "0.0.4",
+    "description": "SSH tunnel client for exposing local services to the internet",
+    "homepage": "https://tunnel.eldrin.link",
+    "license": "MIT",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/eldrin-project/homebrew-eldrin-tunnel/releases/download/v0.0.4/eldrin-tunnel-x86_64-pc-windows-msvc.zip",
+            "hash": "8e1ed131cca15ac4ff48a9a5c01691bf24fd9945e80b0b83d1a61e6699c9996b",
+            "bin": "eldrin-tunnel.exe"
+        }
+    },
+    "checkver": {
+        "github": "https://github.com/eldrin-project/homebrew-eldrin-tunnel"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/eldrin-project/homebrew-eldrin-tunnel/releases/download/v$version/eldrin-tunnel-x86_64-pc-windows-msvc.zip"
+            }
+        }
+    }
+}
